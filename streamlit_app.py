@@ -30,7 +30,38 @@ def get_pyg_renderer(id) -> "StreamlitRenderer":
     # When you need to publish your application, you need set `debug=False`,prevent other users to write your config file.
     return StreamlitRenderer(filtered, spec="./charts.json", debug=False)
  
-id = st.selectbox('Typhoon International number ID', ids, index=1730)
+id = st.selectbox('Typhoon International number ID', [
+                            1705,
+                            116,
+                            1106,
+                            1109,
+                            9612,
+                            14,
+                            1411,
+                            9119,
+                            9713,
+                            7207,
+                            6309,
+                            8614,
+                            416,
+                            9230,
+                            6722,
+                            6515,
+                            7408,
+                            813,
+                            9431,
+                            9617,
+                            1112,
+                            1515,
+                            8305,
+                            8613,
+                            9120,
+                            704,
+                            2106,
+                            7605,
+                            6305,
+                            9719
+                        ], index=0)
 
 renderer = get_pyg_renderer(id)
 
